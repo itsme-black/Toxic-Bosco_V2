@@ -21,7 +21,7 @@ module.exports = welcome = async (bosco, anu) => {
                 try {
                 pp_user = await bosco.getProfilePicture(mem)
                 } catch (e) {
-                pp_user = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
+                pp_user = 'https://telegra.ph/file/6c6c82a987306cc330978.jpg?q=60'
             }
                 try {
                 pp_grup = await bosco.getProfilePicture(anu.jid)
