@@ -49,7 +49,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
          
     const starts = async (bosco = new WAConnection()) => {
 	bosco.logger.level = 'warn'
-	console.log(color(figlet.textSync('BOSCO BY PEPE', {
+	console.log(color(figlet.textSync('BOSCO BY TURBO', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
