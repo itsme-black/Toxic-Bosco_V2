@@ -1030,6 +1030,22 @@ const ftrol = {
 
 ▢ ${prefix}addcmd
 
+▢ ${prefix}addvn
+
+▢ ${prefix}delvn
+
+▢ ${prefix}listvn
+
+▢ ${prefix}addimage
+
+▢ ${prefix}delimage
+
+▢ ${prefix}listimage
+
+▢ ${prefix}addsticker
+
+▢ ${prefix}delsticker
+
 ▢ ${prefix}delcmd
 
 ▢ ${prefix}jadibot
@@ -2098,7 +2114,9 @@ break
 
 //------------------< Downloader/And Search Media >-------------------
 
-       case 'igdl': 
+       case 'ig':
+       case 'igdl':
+       case 'insta':
        case 'instagram':
               if (!q) return reply('*Which Links?*')
               if (!q.includes('instagram')) return reply(mess.error.Iv)
