@@ -1441,16 +1441,6 @@ bosco.relayWAMessage(res)
               _scommand.splice(getCommandPosition(kodenya), 1)
               fs.writeFileSync('./database/scommand.json', JSON.stringify(_scommand))
               textImg("Done!")
-              break
-       case 'listcmd':
-              let teksnyee = `*「 LIST STICKER CMD 」*`
-              let cemde = [];
-              for (let i of _scommand) {
-              cemde.push(i.id)
-              teksnyee += `\n\n➸ *ID :* ${i.id}\n➸ *Cmd* : ${i.chats}`
-               }
-              mentions(teksnyee, cemde, true)
-              break
 //------------------< Bot Owner >-------------------
 
         case 'clearall':
