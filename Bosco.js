@@ -953,21 +953,6 @@ const ftrol = {
             if (!mek.key.fromMe && banChats === true) return
             switch(command){
            
-            case 'owner':
-            ini_ownerNumber = [`${setting.owner}@s.whatsapp.net`,`916380260672@s.whatsapp.net`,`916380260672@s.whatsapp.net`,`${setting.owner}@s.whatsapp.net`,`${setting.owner}@s.whatsapp.net`]
-            let ini_list = []
-		    for (let i of ini_ownerNumber) {
-			const vname_ = bosco.contacts[i] != undefined ? bosco.contacts[i].vname || bosco.contacts[i].notify : undefined
-		     ini_list.push({
-			 "displayName": 'Owner Turbo',
-			 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname_ ? `${vname_}` : `${bosco.user.name}`}\nORG: Turbo Mods;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Its me Turbo Mods\nEND:VCARD`
-			  })
-			  }
-			 hehe = await bosco.sendMessage(from, {
-			 "displayName": `${ini_list.length} kontak`,
-			 "contacts": ini_list 
-			 }, 'contactsArrayMessage', {quoted:mek})
-		     break
         case 'menu':
         case 'help':
         dtod = "916380260672@s.whatsapp.net"
