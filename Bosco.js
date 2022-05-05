@@ -1354,7 +1354,7 @@ break
 		case 'sc':
 		case 'git':	    
 		case 'sourcecode':
-		bosco.sendMessage(from, { text: "https://github.com/TURBOHYPER/Toxic-Alexa", matchedText: 'https://github.com/TURBOHYPER/Toxic-Alexa', description: "", title: "don't click here !!!", thumbnail:fs.readFileSync('./media/image/turbo.jpg') 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
+		bosco.sendMessage(from, { text: "https://github.com/TURBOHYPER/Toxic-Alexa", matchedText: 'https://github.com/TURBOHYPER/Toxic-Alexa', description: "", title: "don't click here !!!", jpegThumbnail: ofrply }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
        case 'debug':
 			 res = await bosco.prepareMessageFromContent(from,{
