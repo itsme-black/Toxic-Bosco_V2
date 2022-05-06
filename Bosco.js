@@ -956,12 +956,12 @@ const ftrol = {
         case 'menu':
         case 'help':
         dtod = "916380260672@s.whatsapp.net"
-     otod = `${settings.ownerNumber}@s.whatsapp.net`
+     otod = `${settings.ownernumber}@s.whatsapp.net`
         stod = `${sender}`
        stst = await bosco.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? 'unknown' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
-       menu = `❏「 \`\`\`${botName}\`\`\` 」
+       menu = `❏「 \`\`\`${botname}\`\`\` 」
 
 ╾ _Creator : @${dtod.split('@')[0]}_
 ╾ _Battery : ${baterai.battery}_
